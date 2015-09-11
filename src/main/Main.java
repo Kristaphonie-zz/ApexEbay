@@ -14,9 +14,12 @@ public class Main
     {
         Buzz buzz = new Buzz();
 //        Implementor implementor = new Implementor();
-//        IntersectionFinder intersectionFinder = new IntersectionFinder();
-//        ReversalFactory reversalFactory = new ReversalFactory();
+        IntersectionFinder intersectionFinder = new IntersectionFinder();
+        ReversalFactory reversalFactory = new ReversalFactory();
 
-        buzz.buildBuzzList();
+//        buzz.buildBuzzList();
+//        reversalFactory.reverseAnyString();
+        intersectionFinder.findIntersection();
+
     }
 }
