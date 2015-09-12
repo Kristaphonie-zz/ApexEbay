@@ -12,20 +12,20 @@ public class ReversalFactory {
 
     public List reverseAnyString() {
         final List<String> reverseMe = new ArrayList<>(Arrays.asList("I am going to be reversed")); // I was going to do racecar, but I think that would have been cheating.
-        String[] splitList = reverseMe.get(0).split("");
+        String[] splitArr= reverseMe.get(0).split("");
         List<String> count = new ArrayList<>();
-        List<String> blah = new ArrayList<>(Arrays.asList(splitList[0]));
+        List<String> splitList = new ArrayList<>(Arrays.asList(splitArr[0]));
         List<String> reversed = new ArrayList<>();
 
-        for (String split : splitList) {
+        for (String split : splitArr) {
             count.add(split);
-            blah.add(split);
+            splitList.add(split);
         }
 
         int j = 0;
-        for (int i = blah.size() - 1; j < count.size(); i--) {
-            reversed.add(splitList[i - 1]);
-            blah.remove(i);
+        for (int i = splitList.size() - 1; j < count.size(); i--) {
+            reversed.add(splitArr[i - 1]);
+            splitList.remove(i);
             j++;
         }
 
