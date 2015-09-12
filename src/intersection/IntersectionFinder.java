@@ -12,19 +12,19 @@ public class IntersectionFinder {
     public List findIntersection()
     {
         final List<Integer> listOne = new ArrayList<>(Arrays.asList(21, 13, 45, 22, 55, 36, 86));
-        final List<Integer> listTwo = new ArrayList<>(Arrays.asList(13, 1, 22, 24, 29, 94, 36));
+        final List<Integer> listTwo = new ArrayList<>(Arrays.asList(13, 2, 22, 24, 29, 94, 36));
         final List<Integer> finalList = new ArrayList<>();
 
         for (int i = 0; i < listOne.size(); i++) {
-            System.out.println(listOne.get(i).toString().indexOf(listTwo.get(i).toString()));
-            System.out.println(listOne.get(i) + "----------" + listTwo.get(i));
-            if (listOne.get(i).toString().contains(listTwo.get(i).toString())) {
-                finalList.add(listOne.get(i));
+            System.out.println(listOne.toString().contains(listTwo.get(i).toString()));
+            System.out.println(listTwo.get(i));
+            if (listOne.contains(listTwo.get(i))) {
+                finalList.add(listTwo.get(i));
             }
         }
 
         System.out.println(finalList);
 
-        return null;
+        return finalList;
     }
 }
