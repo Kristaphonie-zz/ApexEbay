@@ -16,8 +16,6 @@ public class IntersectionFinder {
         final List<Integer> finalList = new ArrayList<>();
 
         for (int i = 0; i < listOne.size(); i++) {
-            System.out.println(listOne.toString().contains(listTwo.get(i).toString()));
-            System.out.println(listTwo.get(i));
             if (listOne.contains(listTwo.get(i))) {
                 finalList.add(listTwo.get(i));
             }

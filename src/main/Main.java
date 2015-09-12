@@ -17,9 +17,9 @@ public class Main
         IntersectionFinder intersectionFinder = new IntersectionFinder();
         ReversalFactory reversalFactory = new ReversalFactory();
 
-//        buzz.buildBuzzList();
-//        reversalFactory.reverseAnyString();
-//        intersectionFinder.findIntersection();
+        buzz.buildBuzzList();
+        reversalFactory.reverseAnyString();
+        intersectionFinder.findIntersection();
         implementor.factorialImplement(5);
     }
 }

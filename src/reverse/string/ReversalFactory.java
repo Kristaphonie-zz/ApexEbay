@@ -29,6 +29,7 @@ public class ReversalFactory {
             j++;
         }
 
+        System.out.println(reversed);
         return reversed;
     }
 }
