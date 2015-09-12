@@ -13,13 +13,13 @@ public class Main
     public static void main(String[] args)
     {
         Buzz buzz = new Buzz();
-//        Implementor implementor = new Implementor();
+        Implementor implementor = new Implementor();
         IntersectionFinder intersectionFinder = new IntersectionFinder();
         ReversalFactory reversalFactory = new ReversalFactory();
 
 //        buzz.buildBuzzList();
 //        reversalFactory.reverseAnyString();
-        intersectionFinder.findIntersection();
-
+//        intersectionFinder.findIntersection();
+        implementor.factorialImplement(5);
     }
 }
