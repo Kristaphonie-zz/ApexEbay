@@ -11,6 +11,11 @@ public class Buzz
 {
     public void buildBuzzList()
     {
+        /*Buzz:
+        o   Print all of the numbers from 1 to 100
+        o   Each number on a new line
+        o   Except, if a number contains a 7, is a multiple of 7, or is a repeating number (such as 11, 22, 33, etc.), print the word buzz on that line, instead of the number */
+
         final List<Integer> twoDigits = new ArrayList<>(Arrays.asList(11, 22, 33, 44, 55, 66, 77, 88, 99));
         final List<String> totalArray = new ArrayList<>();
 
